@@ -6,10 +6,11 @@ body {
     width: 250px;
     display: block;
     position: absolute;
-    font-size: 2.5em;
-    font-family: 'Indie Flower', cursive;
-    margin-top: -6px;
-
+    font-size: 2.8em;
+    font-family: cookie, cursive;
+    margin-top: -5px;
+    font-weight: 500;
+    color: #010d3d;
 }
 
 .headline{
@@ -27,7 +28,7 @@ body {
 
 .menu {
     padding: 15px;
-    background: #fff;
+    background: #F9F9F9;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25)
 }
 
@@ -41,11 +42,11 @@ body {
 .gradiente {
     min-height: 350px;
 background: linear-gradient( rgba(0, 0, 0, 0.62), rgb(10, 20, 43) ),
-url(https://copyleaks.com/blog/wp-content/uploads/2016/04/api_integration-1024x684.jpeg) no-repeat center;
-    background-size: 105% 104%;
-    -webkit-animation: AnimationVargatt 6s ease infinite;
-    -moz-animation: AnimationVargatt 6s ease infinite;
-    animation: AnimationVargatt 6s ease infinite;
+url('../images/background.jpeg') no-repeat center;
+    background-size: 105% 440%;
+    -webkit-animation: AnimationVargatt 18s ease infinite;
+    -moz-animation: AnimationVargatt 18s ease infinite;
+    animation: AnimationVargatt 18s ease infinite;
     background-size: cover;
 }
 
@@ -54,7 +55,7 @@ url(https://copyleaks.com/blog/wp-content/uploads/2016/04/api_integration-1024x6
         background-position: 0% 0%
     }
     50% {
-        background-position: 2% 0%
+        background-position: 2% 100%
     }
     100% {
         background-position: 5% 0%
@@ -66,7 +67,7 @@ url(https://copyleaks.com/blog/wp-content/uploads/2016/04/api_integration-1024x6
         background-position: 0% 0%
     }
     50% {
-        background-position: 2% 10%
+        background-position: 2% 100%
     }
     100% {
         background-position: 5% 0%
@@ -78,7 +79,7 @@ url(https://copyleaks.com/blog/wp-content/uploads/2016/04/api_integration-1024x6
         background-position: 0% 0%
     }
     50% {
-        background-position: 2% 10%
+        background-position: 2% 100%
     }
     100% {
         background-position: 5% 0%
@@ -105,4 +106,29 @@ width: 80%;
     top: 15px;
 }
 
+.text-black{
+    color: #000!important;
+}
+.bold{font-weight: bold}
 
+.card{
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.26);
+    border: 0px!important;
+}
+
+footer{
+    background:#0E1528 ;
+    min-height: 100px;
+    position: relative;
+    bottom: -20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8313725490196079);
+}
+
+footer p {
+    position: relative;
+    top: 40px;
+}
+
+footer a {
+    color: #fff!important;
+}
