@@ -1,0 +1,108 @@
+body {
+    background: #f9f9f9;
+}
+
+.logoText h1 {
+    width: 250px;
+    display: block;
+    position: absolute;
+    font-size: 2.5em;
+    font-family: 'Indie Flower', cursive;
+    margin-top: -6px;
+
+}
+
+.headline{
+    color: #fff;
+    font-family: 'Indie Flower', cursive;
+    margin-top: 30px;
+}
+
+.apresentacao{
+    width: 100%;
+    min-height: 210px;
+    background: #474E5D;
+    margin-top: -15px;
+}
+
+.menu {
+    padding: 15px;
+    background: #fff;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25)
+}
+
+
+.img-centro {
+    width: 160px;
+    margin-top: 50px;
+    box-shadow: 1px 2px 22px rgba(255, 255, 255, 0.21176470588235294);
+}
+
+.gradiente {
+    min-height: 350px;
+background: linear-gradient( rgba(0, 0, 0, 0.62), rgb(10, 20, 43) ),
+url(https://copyleaks.com/blog/wp-content/uploads/2016/04/api_integration-1024x684.jpeg) no-repeat center;
+    background-size: 105% 104%;
+    -webkit-animation: AnimationVargatt 6s ease infinite;
+    -moz-animation: AnimationVargatt 6s ease infinite;
+    animation: AnimationVargatt 6s ease infinite;
+    background-size: cover;
+}
+
+@-webkit-keyframes AnimationVargatt {
+    0% {
+        background-position: 0% 0%
+    }
+    50% {
+        background-position: 2% 0%
+    }
+    100% {
+        background-position: 5% 0%
+    }
+}
+
+@-moz-keyframes AnimationVargatt {
+    0% {
+        background-position: 0% 0%
+    }
+    50% {
+        background-position: 2% 10%
+    }
+    100% {
+        background-position: 5% 0%
+    }
+}
+
+@keyframes AnimationVargatt {
+    0% {
+        background-position: 0% 0%
+    }
+    50% {
+        background-position: 2% 10%
+    }
+    100% {
+        background-position: 5% 0%
+    }
+}
+
+.apresentacao{
+    margin-top: -28px;
+}
+
+.apresentacao .box p{
+width: 80%;
+    margin: 0 auto;
+}
+
+.apresentacao .box{
+    color: #fff;
+    position: relative;
+    top: 30px;
+}
+
+.apresentacao button{
+    position: relative;
+    top: 15px;
+}
+
+
