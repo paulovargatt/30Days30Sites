@@ -1,0 +1,66 @@
+/*Menu*/
+.menu{margin-bottom: 11px}
+.menu ul.nav{margin-top: 15px;}
+.menu ul.nav li{margin-right: 45px;}
+.menu ul.nav li a{color: #524261;font-size: 1.2em}
+
+/*Parallax*/
+.parallax {
+    background-image: linear-gradient( rgba(0, 0, 0, 0), rgb(43, 43, 43) ), url(../images/back.jpeg);
+    height: 630px;
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: -2px -2px 10px rgba(136, 111, 111, 0.52);
+    position: relative;
+}
+/*Box Center*/
+.box-center{position: absolute;margin-top: 100px;width: 100%}
+.box-center h1{font-size: 3.5em;}
+.box-center h1:before{content: "";
+    width: 40px;
+    height: 3px;
+    background: #fff;
+    display: inline-block;
+    top: -12px;
+    position: relative;
+    left: -9px;}
+
+.box-center h1:after{content: "";
+    width: 40px;
+    height: 3px;
+    background: #fff;
+    display: inline-block;
+    top: -7px;
+    position: relative;
+    left: 12px;}
+.dateFont{font-size: 1.3em}
+
+
+footer{
+    width: 100%;
+    height: 60px;
+    background: #19202A;
+}
+footer p {margin-top: 20px}
+
+.inline p {
+    margin-right: 19px;
+    font-size: 1.4em;
+}
+.inline.icons{height: 50px; margin-top: -5px;float: right;cursor: pointer}
+
+/*Helpers*/
+.destFont{font-family: 'Dancing Script', cursive;}
+.white{color: #fff;}
+.black{color:#000}
+.text-center{text-align: center}
+.bold{font-weight: bold}
+.bigFont{font-size: 5em}
+.shadowText{text-shadow: 1px 1px 2px rgb(0, 0, 0);}
+.conversionBack{background-image: linear-gradient(to top, #926ad1 0%, #e0a4fb 100%);
+    border: 0px; width: 150px;color: #fff; font-weight: bold;}
+.inline{display: inline-flex;}
+.conversionBack:active{background: #926ad1;border: 0px}
+.conversionBack:hover{background: #e0a4fb;border: 0px}
