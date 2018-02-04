@@ -1,0 +1,74 @@
+/*Menu*/
+.menu{margin-top: 35px}
+.menu .logo{margin-top: -40px}
+.nav-item a.nav-link{padding: .5rem 2.5rem;color:#000}
+
+.menuDrop li ul {
+    margin: 0;
+    visibility: hidden;
+    background: rgba(229, 229, 229, 0.32);;
+    padding: 7px;
+    position: absolute;
+    border-top: 5px solid #0698E1;
+    left: calc(15% - -107px);
+}
+.menuDrop li ul li a {
+    color: #000;
+    margin-left: 27px;
+    font-weight: 600;
+}
+
+.menuDrop li ul li
+{	float: none;
+    display: inline}
+
+.menuDrop li ul li a {	width: auto;}
+
+.bx-wrapper {
+    -moz-box-shadow: 0 0 0px #ccc;
+    -webkit-box-shadow: 0 0 5px #ccc;
+     box-shadow: 0 0 0px #ccc;
+     border: 0px solid #fff;
+    background: #fff;
+}
+
+.box-slide{
+    position: absolute;
+    z-index: 55;
+    top: 30%;
+    left: 5%;
+}
+.box-slide h1{color: #fff;text-shadow: 1px 1px 1px #000}
+.box-slide h4{color: #fff;width: 50%;background: #2D2E32}
+
+footer{
+    width: 100%;
+}
+.footerNav{width: 100%;height: 60px;background: #2D2E32}
+.footerContent{width: 100%; min-height: 250px;background: #383838}
+
+.nav-footer{
+    display: flex;
+    color: #fff;
+    padding: 40px;
+}
+.nav-footer ul{list-style: none;}
+
+.nav-footer ul li:first-child{font-weight: bold; color: #fff}
+
+.nav-footer ul li {font-weight: 400; color: #929292
+}
+
+.footerNav {
+    display: flex;
+    justify-content: center;
+}
+
+.footerNav p{
+    display: flex;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+}
+
+
