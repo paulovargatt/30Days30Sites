@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04cc68fc-ced3-4e9a-bbd2-35a6662eab68" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Dia3/images/memorial_memorial.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Dia3/images/slider_memorial_1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Dia3/images/slider_memorial_5.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Dia3/images/slider_memorial_8.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Dia3/images/wtc_museum.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Dia3/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Dia3/js/script.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Dia2/index.html" afterPath="$PROJECT_DIR$/Dia2/index.html" />
-      <change beforePath="$PROJECT_DIR$/Dia2/story.html" afterPath="$PROJECT_DIR$/Dia2/story.html" />
+      <change beforePath="$PROJECT_DIR$/Dia3/css/main.css" afterPath="$PROJECT_DIR$/Dia3/css/main.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -51,8 +43,8 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Dia3/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="62" column="18" lean-forward="false" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
+            <state relative-caret-position="130">
+              <caret line="41" column="37" lean-forward="false" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -65,6 +57,7 @@
       <find>indie</find>
       <find>bsp</find>
       <find>grad</find>
+      <find>.box-slide h4</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -207,12 +200,12 @@
       <workItem from="1517441380830" duration="9370000" />
       <workItem from="1517535818651" duration="9926000" />
       <workItem from="1517740998910" duration="165000" />
-      <workItem from="1517741175154" duration="6246000" />
+      <workItem from="1517741175154" duration="6298000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25707000" />
+    <option name="totallyTimeSpent" value="25759000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1382" height="744" extended-state="6" />
@@ -225,7 +218,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32730263" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32715008" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -427,8 +420,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Dia3/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="62" column="18" lean-forward="false" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
+        <state relative-caret-position="130">
+          <caret line="41" column="37" lean-forward="false" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
           <folding />
         </state>
       </provider>
