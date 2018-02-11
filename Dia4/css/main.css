@@ -1,0 +1,54 @@
+header{ padding: 35px }
+header .logo h1{ font-size: 1.5em; }
+header .logo h2{ font-size: 1em; }
+
+.container {width: 75%}
+
+.feature{
+    background: #f7f7f7;
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 593px;
+    padding: 40px;
+}
+
+.img-feature{
+    position: absolute;
+    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.39);
+}
+
+.box{
+    display: flex;
+    position: absolute;
+    left: 5px;
+    top: 0%;
+    width: 25%;
+    height: 100%;
+    border-right: 10px solid #F7F7F7;
+
+}
+.box .one{
+    width: 100%;
+    top: 80%;
+    position: absolute;
+    text-align: center;
+    background: #45BA01;
+    padding: 15px;
+    color: #ffffff;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.one h1{
+    font-size: 1.3em;
+}
+
+.box:nth-child(2){ left: 25%;}
+.box:nth-child(3){  left: 50%;}
+.box:nth-child(4){  left: 75%;border: 0px}
+
+.descEmp{width: 55%}
+
+footer{
+    padding: 50px;
+}
