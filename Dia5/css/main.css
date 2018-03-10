@@ -5,11 +5,11 @@
     height: 100%;
     top: 0;
     bottom: 0;
-    width: 25%
+    width: 38%
 }
 
 .menu-info{
-    width: calc(100% - 25%);
+    width: calc(100% - 38%);
     float: right
 }
 
@@ -35,8 +35,8 @@
 .master-menu li a{
     color: #a0a0a0;
     font-weight: bold;
-    font-size: 2.6em;
-    margin-bottom: 80px;
+    font-size: 2.8em;
+    margin-bottom: 100px;
     text-transform: uppercase;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     z-index: 15;
@@ -57,23 +57,69 @@
 
 
 
-.container-descricao img{
-    width: 100%
+.container-descricao{
+    width: calc(100% - 38%)
 }
 
-.dinner-img{
-    width: 280px;
+.format-img-menu{
+    width: 300px;
     position: relative;
-    margin-top: -150px;
+    margin-top: -100px;
     z-index: 1;
-    opacity: 0.8;
+    opacity: 0;
     left: 5px;
-    top: 29px
 }
 
+.container-descricao .background{
+    background: linear-gradient( rgba(0, 0, 0, 0.62), rgba(43, 43, 43, 0.27) ),  url('https://az727346.vo.msecnd.net/content/images/specials/180124-bbpd-steak-lobster-specials-bg-v3.jpg') no-repeat center center;
+    background-size: cover;
+    width: calc(100% - 38%);
+    height: 100%;
+    position: absolute;
+}
+
+.container-descricao .background-jantar{
+    background: linear-gradient( rgba(0, 0, 0, 0.62), rgba(43, 43, 43, 0.27) ),  url('../images/170320-specials-lunch-combos.jpg') no-repeat center center;
+    background-size: cover;
+    width: calc(100% - 38%);
+    height: 100%;
+    position: absolute;
+}
+
+.call-to-action .box{
+    position: absolute;
+    text-align: center;
+    display: block;
+    width: 100%;
+    top: 30%;
+}
+
+
+.call-to-action .box h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    color: #fff;  
+    font-size: 3.5em
+}
+
+.call-to-action .box h2 {
+color: #fff;
+width: 50%;
+margin:  0 auto;
+font-weight: 800;
+font-size: 1.3em;
+line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.call-to-action .box button{
+    margin-top: 30px;
+    width: 150px;
+    font-weight: bold
+}
 
 /* Helpers */ 
-
 .negative-padding{
     padding: 0px;
     margin: 0px
@@ -82,4 +128,67 @@
 .center{
     text-align: center;
     margin: 0 auto;
+}
+
+
+
+/*Animations*/
+@keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@keyframes fadeOut{
+    from {opacity: 1}
+    to {opacity: 0}
+}
+
+@keyframes scaleIn{
+    0% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.scaleBase{
+    transform: scale(0.5)
+}
+
+.scaleIn{
+    animation-name: scaleIn;
+    animation-duration: 3s;
+    transform: scale(1);
+}
+
+@keyframes scaleOut{
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+.scaleOut{
+    animation-name: scaleOut;
+    animation-duration: 3s;
+    opacity: 0;
+}
+
+
+
+
+
+.blockanimation{
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    opacity: 1;
+}
+
+.hideanimation{
+    animation-name: fadeOut;
+    animation-duration: 1s;
+    opacity: 0;
 }

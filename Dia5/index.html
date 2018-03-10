@@ -11,7 +11,9 @@
     <link rel="apple-touch-icon" href="icon.png">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+
 </head>
 
 <body>
@@ -23,24 +25,22 @@
 
             <ul class="nav flex-column center master-menu">
                 <li class="nav-item">
-                    <a class="nav-link active" id="dinner" href="#">Almoço</a>
-                    <img class="dinner-img" src="images/dinner_overlay.png">
+                    <a class="nav-link active " id="dinner" href="#">Almoço</a>
+                    <img class="format-img-menu dinner-img blockanimation" src="images/dinner_overlay.png">
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Jantar</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Bar</a>
+                    <a class="nav-link" href="#" id="jantar">Jantar</a>
+                    <img class="format-img-menu janta-img hideanimation" src="images/lunch_overlay.png">                    
                 </li>
             </ul>
         </div>
 
 
-  
-        <div class="menu-info negative-padding">
-            <ul class="nav">
+
+        <div class="menu-info negative-padding ">
+            <ul class="nav ">
                 <li class="nav-item">
-                    <a class="nav-link active"  href="#">Active</a>
+                    <a class="nav-link active" href="#">Active</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Link</a>
@@ -52,7 +52,15 @@
 
             <section>
                 <div class="container-descricao">
-                    <img class="img-fluid" src="https://az727346.vo.msecnd.net/content/images/specials/180124-bbpd-steak-lobster-specials-bg-v3.jpg">
+                    <div class="background">
+                        <section class="call-to-action">
+                            <div class="box">
+                                <h1>STEAK & LOBSTER IS BACK!</h1>
+                                <h2>STARTING AT $15.99 Prices & participation may vary.</h2>
+                                <button type="button" class="btn btn-outline-light">More</button>
+                            </div>
+                        </section>
+                    </div>
                 </div>
             </section>
 
@@ -65,11 +73,66 @@
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script>
 
-    </script>
+            let dinnerLink = document.getElementById('dinner');
+            let linkjantar = document.getElementById('jantar');
+            let imgDinner = document.querySelector('.dinner-img');
+            let imgJanta = document.querySelector('.janta-img');
+            let containerInfo = document.querySelector('.container-descricao');
+
+
+            //ALMOÇO
+            dinnerLink.addEventListener('click', () => {
+                imgDinner.classList.remove('hideanimation');                
+                imgDinner.classList.add('blockanimation');
+                imgJanta.classList.remove('blockanimation');
+                imgJanta.classList.add('hideanimation');
+
+
+                var xhr = new XMLHttpRequest();
+                xhr.open('GET', 'ajax/dinner.html');
+                xhr.onload = function () {
+                    if (xhr.status === 200) {
+                        containerInfo.innerHTML = '';
+                        let response = xhr.response;
+                        containerInfo.innerHTML = response
+                    }
+                    else {
+                        alert('Request failed.  Returned status of ' + xhr.status);
+                    }
+                };
+                xhr.send();
+            });
+
+            linkjantar.addEventListener('click', () => {
+                imgDinner.classList.add('hideanimation');
+                imgJanta.classList.remove('hideanimation');
+                imgJanta.classList.add('blockanimation');
+
+                var xhr = new XMLHttpRequest();
+                xhr.open('GET', 'ajax/jantar.html');
+                xhr.onload = function () {
+                    if (xhr.status === 200) {
+                        containerInfo.innerHTML = '';
+                        let response = xhr.response;
+                        containerInfo.innerHTML = response
+
+                    }
+                    else {
+                        alert('Request failed.  Returned status of ' + xhr.status);
+                    }
+                };
+                xhr.send();
+            });
+
+
+
+
+
+        </script>
 </body>
 
 </html>
