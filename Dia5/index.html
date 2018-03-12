@@ -30,12 +30,10 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#" id="jantar">Jantar</a>
-                    <img class="format-img-menu janta-img hideanimation" src="images/lunch_overlay.png">                    
+                    <img class="format-img-menu janta-img hideanimation" src="images/lunch_overlay.png">
                 </li>
             </ul>
         </div>
-
-
 
         <div class="menu-info negative-padding ">
             <ul class="nav ">
@@ -86,7 +84,7 @@
 
             //ALMOÇO
             dinnerLink.addEventListener('click', () => {
-                imgDinner.classList.remove('hideanimation');                
+                imgDinner.classList.remove('hideanimation');
                 imgDinner.classList.add('blockanimation');
                 imgJanta.classList.remove('blockanimation');
                 imgJanta.classList.add('hideanimation');
@@ -119,18 +117,13 @@
                         containerInfo.innerHTML = '';
                         let response = xhr.response;
                         containerInfo.innerHTML = response
-
                     }
                     else {
-                        alert('Request failed.  Returned status of ' + xhr.status);
+                        alert('Request failed');
                     }
                 };
                 xhr.send();
             });
-
-
-
-
 
         </script>
 </body>
