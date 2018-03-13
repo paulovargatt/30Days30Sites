@@ -82,34 +82,30 @@
             let containerInfo = document.querySelector('.container-descricao');
 
 
-            //ALMOÇO
+            //GetStorage
+            let storage = localStorage.getItem('menu');
+            if (storage == 'janta') {
+                jantarGet();
+            }else{
+                almocoGet();
+            }
+
+
             dinnerLink.addEventListener('click', () => {
-                imgDinner.classList.remove('hideanimation');
-                imgDinner.classList.add('blockanimation');
-                imgJanta.classList.remove('blockanimation');
-                imgJanta.classList.add('hideanimation');
-
-
-                var xhr = new XMLHttpRequest();
-                xhr.open('GET', 'ajax/dinner.html');
-                xhr.onload = function () {
-                    if (xhr.status === 200) {
-                        containerInfo.innerHTML = '';
-                        let response = xhr.response;
-                        containerInfo.innerHTML = response
-                    }
-                    else {
-                        alert('Request failed.  Returned status of ' + xhr.status);
-                    }
-                };
-                xhr.send();
+                localStorage.setItem('menu','almoco')
+                almocoGet();
             });
 
             linkjantar.addEventListener('click', () => {
+                localStorage.setItem('menu', 'janta')                
+                jantarGet()
+            });
+
+
+            function jantarGet() {
                 imgDinner.classList.add('hideanimation');
                 imgJanta.classList.remove('hideanimation');
                 imgJanta.classList.add('blockanimation');
-
                 var xhr = new XMLHttpRequest();
                 xhr.open('GET', 'ajax/jantar.html');
                 xhr.onload = function () {
@@ -123,7 +119,29 @@
                     }
                 };
                 xhr.send();
-            });
+            };
+
+            function almocoGet() {
+                imgDinner.classList.remove('hideanimation');
+                imgDinner.classList.add('blockanimation');
+                imgJanta.classList.remove('blockanimation');
+                imgJanta.classList.add('hideanimation');
+                var xhr = new XMLHttpRequest();
+                xhr.open('GET', 'ajax/dinner.html');
+                xhr.onload = function () {
+                    if (xhr.status === 200) {
+                        containerInfo.innerHTML = '';
+                        let response = xhr.response;
+                        containerInfo.innerHTML = response
+                    }
+                    else {
+                        alert('Request failed.  Returned status of ' + xhr.status);
+                    }
+                };
+                xhr.send();
+            }
+
+
 
         </script>
 </body>
