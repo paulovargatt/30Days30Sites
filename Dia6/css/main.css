@@ -1,0 +1,73 @@
+body {
+    background: url('http://netrashirke.com/images/background-pattern-style-3.png') no-repeat center center fixed /cover;
+    background-color: #014EB6
+}
+
+.logo {
+    text-align: center
+}
+
+.logo img {
+    width: 70%;
+}
+
+.menu {
+    width: 100%;
+}
+
+.menu .nav {
+    background: #222222;
+    padding: 10px
+}
+
+.menu .nav li a {
+    color: #fff;
+    border-right: 1.5px solid rgba(243, 243, 243, 0.05);
+}
+
+.destaque-media h5 {
+    font-size: 0.9em;
+}
+
+.destaque-media p {
+    font-size: 0.8em
+}
+
+.prata {
+    background: #fffff5;
+}
+
+.neg-padding-right {
+    padding-right: 0px
+}
+
+.neg-padding-left {
+    padding-left: 0px
+}
+
+.padding {
+    padding: 10px;
+}
+
+.align-center {
+    align-items: center;
+    background: #fffff5;
+    ;
+    width: 100%;
+    margin: 0 auto
+}
+
+.item-home {
+    border-right: 1px solid rgba(0, 0, 0, 0.10);
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-home h6 {
+    font-size: 1em
+}
+
+.item-home div p {
+    font-size: 0.8em
+}
