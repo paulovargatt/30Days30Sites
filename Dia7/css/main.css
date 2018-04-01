@@ -1,0 +1,39 @@
+#background{
+    background-image: url('http://www.theshack.movie/images/the-shack-landscape-wide.jpg');
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    margin-left: -50%;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+section.menu ul{
+    list-style: none;
+    font-size: 1.5em;
+    font-weight: 100;
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    top: 35vh;
+    position: relative;
+    cursor: pointer;
+    width: 150px;
+    text-align: center
+}
+
+section.menu ul li:hover span:hover{
+-webkit-filter: blur(5px)!important;
+filter: blur(0px)!important;
+}
+
+section.menu ul li:hover{
+      background: #f3f3f32e;
+      border-radius: 30%;
+      -webkit-filter: blur(5px);
+      filter: blur(5px);
+}
